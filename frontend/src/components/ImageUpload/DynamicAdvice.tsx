@@ -7,6 +7,8 @@ interface DynamicAdviceProps {
 const DynamicAdvice: React.FC<DynamicAdviceProps> = ({ analysisId }) => {
   const [chatResponse, setChatResponse] = useState<string | null>(null);
 
+
+  // good for test purposes but have to met a seperate http file for those backend callls
 //   const requestDynamicAdvice = async (mvpType: 'skinCare' | 'hairStyle' | 'looksMax') => {
 //     if (!analysisId) return alert('No analysis data available.');
 //     try {
